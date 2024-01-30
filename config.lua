@@ -6,7 +6,7 @@ Config.LicenseRank = 2
 Config.ArmoryWhitelist = {}
 Config.WhitelistedVehicles = {}
 Config.PoliceHelicopter = 'POLMAV'
-Config.FuelResource = 'LegacyFuel' -- supports any that has a GetFuel() and SetFuel() export
+Config.FuelResource = 'cdn-fuel' -- supports any that has a GetFuel() and SetFuel() export
 
 Config.AmmoLabels = {
     ['AMMO_PISTOL'] = '9x19mm parabellum bullet',
@@ -27,43 +27,43 @@ Config.Objects = {
 
 Config.Locations = {
     ['duty'] = {
-        [1] = vector3(440.085, -974.924, 30.689),
+        [1] = vector3(442.19, -982.03, 30.7),       -- Gabz
         [2] = vector3(-449.811, 6012.909, 31.815),
     },
     ['vehicle'] = {
-        [1] = vector4(448.159, -1017.41, 28.562, 90.654),
-        [2] = vector4(471.13, -1024.05, 28.17, 274.5),
-        [3] = vector4(-455.39, 6002.02, 31.34, 87.93),
+        [1] = vector4(453.77, -1025.09, 28.5, 6.05),    -- Gabz
+        [2] = vector4(474.13, -1022.31, 27.72, 270.16), -- Gabz back
+        --[3] = vector4(-455.39, 6002.02, 31.34, 87.93),
     },
     ['stash'] = {
-        [1] = vector3(453.075, -980.124, 30.889),
+        [1] = vector3(462.26, -999.42, 30.69),      -- Gabz
     },
     ['impound'] = {
-        [1] = vector3(436.68, -1007.42, 27.32),
-        [2] = vector3(-436.14, 5982.63, 31.34),
+        [1] = vector4(435.36, -1014.65, 28.73, 180.93),     -- Gabz
+        --[2] = vector3(-436.14, 5982.63, 31.34),
     },
     ['helicopter'] = {
         [1] = vector4(449.168, -981.325, 43.691, 87.234),
-        [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
+        --[2] = vector4(-475.43, 5988.353, 31.716, 31.34),
     },
     ['armory'] = {
-        [1] = vector3(462.23, -981.12, 30.68),
+        [1] = vector3(482.59, -995.38, 30.69),  -- Gabz
     },
     ['trash'] = {
-        [1] = vector3(439.0907, -976.746, 30.776),
+        [1] = vector3(487.28, -997.01, 30.69), -- Gabz
     },
     ['fingerprint'] = {
-        [1] = vector3(460.9667, -989.180, 24.92),
+        [1] = vector3(475.14, -999.7, 25.77),   -- Gabz
     },
     ['evidence'] = {
-        [1] = vector3(442.1722, -996.067, 30.689),
-        [2] = vector3(451.7031, -973.232, 30.689),
-        [3] = vector3(455.1456, -985.462, 30.689),
+        [1] = vector3(472.73, -996.76, 26.27),  -- Gabz
+        [2] = vector3(472.83, -994.35, 26.27),  -- Gabz
+        [3] = vector3(474.74, -996.61, 26.27),  -- Gabz
     },
     ['stations'] = {
-        [1] = { label = 'Police Station', coords = vector4(428.23, -984.28, 29.76, 3.5) },
-        [2] = { label = 'Prison', coords = vector4(1845.903, 2585.873, 45.672, 272.249) },
-        [3] = { label = 'Police Station Paleto', coords = vector4(-451.55, 6014.25, 31.716, 223.81) },
+        [1] = {label = 'Commissariat - Legion Square', coords = vector4(428.23, -984.28, 29.76, 3.5)},
+        [2] = {label = 'Prison de Bolingbroke', coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
+        [3] = {label = 'Commissariat - Paleto', coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
     },
 }
 
@@ -74,19 +74,19 @@ Config.SecurityCameras = {
         [2] = { label = 'Pacific Bank CAM#2', coords = vector3(232.86, 221.46, 107.83), r = { x = -25.0, y = 0.0, z = -140.91 }, canRotate = false, isOnline = true },
         [3] = { label = 'Pacific Bank CAM#3', coords = vector3(252.27, 225.52, 103.99), r = { x = -35.0, y = 0.0, z = -74.87 }, canRotate = false, isOnline = true },
         [4] = { label = 'Limited Ltd Grove St. CAM#1', coords = vector3(-53.1433, -1746.714, 31.546), r = { x = -35.0, y = 0.0, z = -168.9182 }, canRotate = false, isOnline = true },
-        [5] = { label = "Rob's Liqour Prosperity St. CAM#1", coords = vector3(-1482.9, -380.463, 42.363), r = { x = -35.0, y = 0.0, z = 79.53281 }, canRotate = false, isOnline = true },
-        [6] = { label = "Rob's Liqour San Andreas Ave. CAM#1", coords = vector3(-1224.874, -911.094, 14.401), r = { x = -35.0, y = 0.0, z = -6.778894 }, canRotate = false, isOnline = true },
+        [5] = { label = 'Rob\'s Liqour Prosperity St. CAM#1', coords = vector3(-1482.9, -380.463, 42.363), r = { x = -35.0, y = 0.0, z = 79.53281 }, canRotate = false, isOnline = true },
+        [6] = { label = 'Rob\'s Liqour San Andreas Ave. CAM#1', coords = vector3(-1224.874, -911.094, 14.401), r = { x = -35.0, y = 0.0, z = -6.778894 }, canRotate = false, isOnline = true },
         [7] = { label = 'Limited Ltd Ginger St. CAM#1', coords = vector3(-718.153, -909.211, 21.49), r = { x = -35.0, y = 0.0, z = -137.1431 }, canRotate = false, isOnline = true },
         [8] = { label = '24/7 Supermarkt Innocence Blvd. CAM#1', coords = vector3(23.885, -1342.441, 31.672), r = { x = -35.0, y = 0.0, z = -142.9191 }, canRotate = false, isOnline = true },
-        [9] = { label = "Rob's Liqour El Rancho Blvd. CAM#1", coords = vector3(1133.024, -978.712, 48.515), r = { x = -35.0, y = 0.0, z = -137.302 }, canRotate = false, isOnline = true },
+        [9] = { label = 'Rob\'s Liqour El Rancho Blvd. CAM#1', coords = vector3(1133.024, -978.712, 48.515), r = { x = -35.0, y = 0.0, z = -137.302 }, canRotate = false, isOnline = true },
         [10] = { label = 'Limited Ltd West Mirror Drive CAM#1', coords = vector3(1151.93, -320.389, 71.33), r = { x = -35.0, y = 0.0, z = -119.4468 }, canRotate = false, isOnline = true },
         [11] = { label = '24/7 Supermarkt Clinton Ave CAM#1', coords = vector3(383.402, 328.915, 105.541), r = { x = -35.0, y = 0.0, z = 118.585 }, canRotate = false, isOnline = true },
         [12] = { label = 'Limited Ltd Banham Canyon Dr CAM#1', coords = vector3(-1832.057, 789.389, 140.436), r = { x = -35.0, y = 0.0, z = -91.481 }, canRotate = false, isOnline = true },
-        [13] = { label = "Rob's Liqour Great Ocean Hwy CAM#1", coords = vector3(-2966.15, 387.067, 17.393), r = { x = -35.0, y = 0.0, z = 32.92229 }, canRotate = false, isOnline = true },
+        [13] = { label = 'Rob\'s Liqour Great Ocean Hwy CAM#1', coords = vector3(-2966.15, 387.067, 17.393), r = { x = -35.0, y = 0.0, z = 32.92229 }, canRotate = false, isOnline = true },
         [14] = { label = '24/7 Supermarkt Ineseno Road CAM#1', coords = vector3(-3046.749, 592.491, 9.808), r = { x = -35.0, y = 0.0, z = -116.673 }, canRotate = false, isOnline = true },
         [15] = { label = '24/7 Supermarkt Barbareno Rd. CAM#1', coords = vector3(-3246.489, 1010.408, 14.705), r = { x = -35.0, y = 0.0, z = -135.2151 }, canRotate = false, isOnline = true },
         [16] = { label = '24/7 Supermarkt Route 68 CAM#1', coords = vector3(539.773, 2664.904, 44.056), r = { x = -35.0, y = 0.0, z = -42.947 }, canRotate = false, isOnline = true },
-        [17] = { label = "Rob's Liqour Route 68 CAM#1", coords = vector3(1169.855, 2711.493, 40.432), r = { x = -35.0, y = 0.0, z = 127.17 }, canRotate = false, isOnline = true },
+        [17] = { label = 'Rob\'s Liqour Route 68 CAM#1', coords = vector3(1169.855, 2711.493, 40.432), r = { x = -35.0, y = 0.0, z = 127.17 }, canRotate = false, isOnline = true },
         [18] = { label = '24/7 Supermarkt Senora Fwy CAM#1', coords = vector3(2673.579, 3281.265, 57.541), r = { x = -35.0, y = 0.0, z = -80.242 }, canRotate = false, isOnline = true },
         [19] = { label = '24/7 Supermarkt Alhambra Dr. CAM#1', coords = vector3(1966.24, 3749.545, 34.143), r = { x = -35.0, y = 0.0, z = 163.065 }, canRotate = false, isOnline = true },
         [20] = { label = '24/7 Supermarkt Senora Fwy CAM#2', coords = vector3(1729.522, 6419.87, 37.262), r = { x = -35.0, y = 0.0, z = -160.089 }, canRotate = false, isOnline = true },
@@ -97,9 +97,9 @@ Config.SecurityCameras = {
         [25] = { label = 'Fleeca Bank Great Ocean Hwy CAM#1', coords = vector3(-2958.885, 478.983, 17.406), r = { x = -35.0, y = 0.0, z = -34.69595 }, canRotate = false, isOnline = true },
         [26] = { label = 'Paleto Bank CAM#1', coords = vector3(-102.939, 6467.668, 33.424), r = { x = -35.0, y = 0.0, z = 24.66 }, canRotate = false, isOnline = true },
         [27] = { label = 'Del Vecchio Liquor Paleto Bay', coords = vector3(-163.75, 6323.45, 33.424), r = { x = -35.0, y = 0.0, z = 260.00 }, canRotate = false, isOnline = true },
-        [28] = { label = "Don's Country Store Paleto Bay CAM#1", coords = vector3(166.42, 6634.4, 33.69), r = { x = -35.0, y = 0.0, z = 32.00 }, canRotate = false, isOnline = true },
-        [29] = { label = "Don's Country Store Paleto Bay CAM#2", coords = vector3(163.74, 6644.34, 33.69), r = { x = -35.0, y = 0.0, z = 168.00 }, canRotate = false, isOnline = true },
-        [30] = { label = "Don's Country Store Paleto Bay CAM#3", coords = vector3(169.54, 6640.89, 33.69), r = { x = -35.0, y = 0.0, z = 5.78 }, canRotate = false, isOnline = true },
+        [28] = { label = 'Don\'s Country Store Paleto Bay CAM#1', coords = vector3(166.42, 6634.4, 33.69), r = { x = -35.0, y = 0.0, z = 32.00 }, canRotate = false, isOnline = true },
+        [29] = { label = 'Don\'s Country Store Paleto Bay CAM#2', coords = vector3(163.74, 6644.34, 33.69), r = { x = -35.0, y = 0.0, z = 168.00 }, canRotate = false, isOnline = true },
+        [30] = { label = 'Don\'s Country Store Paleto Bay CAM#3', coords = vector3(169.54, 6640.89, 33.69), r = { x = -35.0, y = 0.0, z = 5.78 }, canRotate = false, isOnline = true },
         [31] = { label = 'Vangelico Jewelery CAM#1', coords = vector3(-627.54, -239.74, 40.33), r = { x = -35.0, y = 0.0, z = 5.78 }, canRotate = true, isOnline = true },
         [32] = { label = 'Vangelico Jewelery CAM#2', coords = vector3(-627.51, -229.51, 40.24), r = { x = -35.0, y = 0.0, z = -95.78 }, canRotate = true, isOnline = true },
         [33] = { label = 'Vangelico Jewelery CAM#3', coords = vector3(-620.3, -224.31, 40.23), r = { x = -35.0, y = 0.0, z = 165.78 }, canRotate = true, isOnline = true },
@@ -138,6 +138,11 @@ Config.AuthorizedVehicles = {
         ['policet'] = 'Police Car 6',
         ['sheriff'] = 'Sheriff Car 1',
         ['sheriff2'] = 'Sheriff Car 2',
+        -- Vitto Vanilla modded cars
+        ['apolicec6'] = '911 Pfister',
+        ['lspdcara'] = '911 Caracara',
+        ['scoutpol'] = '911 Vapid',
+        ['nkscout2020'] = '911 Vapid II',
     },
 }
 
@@ -196,18 +201,19 @@ Config.Items = {
                 }
             }
         },
-        { name = 'weapon_nightstick',  price = 0, amount = 50 },
-        { name = 'weapon_flashlight',  price = 0, amount = 50 },
-        { name = 'pistol_ammo',        price = 0, amount = 50 },
-        { name = 'smg_ammo',           price = 0, amount = 50 },
-        { name = 'shotgun_ammo',       price = 0, amount = 50 },
-        { name = 'rifle_ammo',         price = 0, amount = 50 },
-        { name = 'handcuffs',          price = 0, amount = 50 },
+        { name = 'weapon_nightstick',  price = 0, amount = 1 },
+        { name = 'weapon_flashlight',  price = 0, amount = 1 },
+        { name = 'taserammo',          price = 0, amount = 20 },
+        { name = 'pistol_ammo',        price = 0, amount = 20 },
+        { name = 'smg_ammo',           price = 0, amount = 20 },
+        { name = 'shotgun_ammo',       price = 0, amount = 20 },
+        { name = 'rifle_ammo',         price = 0, amount = 20 },
+        { name = 'handcuffs',          price = 0, amount = 1 },
         { name = 'empty_evidence_bag', price = 0, amount = 50 },
-        { name = 'police_stormram',    price = 0, amount = 50 },
-        { name = 'armor',              price = 0, amount = 50 },
-        { name = 'radio',              price = 0, amount = 50 },
-        { name = 'heavyarmor',         price = 0, amount = 50 },
+        { name = 'police_stormram',    price = 0, amount = 10 },
+        { name = 'armor',              price = 0, amount = 1 },
+        { name = 'radio',              price = 0, amount = 1 },
+        { name = 'heavyarmor',         price = 0, amount = 1 },
     }
 }
 
