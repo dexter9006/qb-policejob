@@ -498,9 +498,9 @@ RegisterNetEvent('police:server:SendTrackerLocation', function(coords, requestId
         description = msg
     }
     TriggerClientEvent('police:client:TrackerMessage', requestId, msg, coords)
-    TriggerClientEvent('qb-phone:client:addPoliceAlert', requestId, alertData)
+    --TriggerClientEvent('qb-phone:client:addPoliceAlert', requestId, alertData)
 end)
-
+--[[
 QBCore.Commands.Add('911p', Lang:t('commands.police_report'), { { name = 'message', help = Lang:t('commands.message_sent') } }, false, function(source, args)
     local src = source
     local message
@@ -516,7 +516,7 @@ QBCore.Commands.Add('911p', Lang:t('commands.police_report'), { { name = 'messag
         end
     end
 end)
-
+--]]
 -- Items
 QBCore.Functions.CreateUseableItem('handcuffs', function(source)
     local src = source
@@ -645,7 +645,7 @@ RegisterNetEvent('police:server:policeAlert', function(text)
     for _, v in pairs(players) do
         if v and v.PlayerData.job.type == 'leo' and v.PlayerData.job.onduty then
             local alertData = { title = Lang:t('info.new_call'), coords = { x = coords.x, y = coords.y, z = coords.z }, description = text }
-            TriggerClientEvent('qb-phone:client:addPoliceAlert', v.PlayerData.source, alertData)
+            --TriggerClientEvent('qb-phone:client:addPoliceAlert', v.PlayerData.source, alertData)
             TriggerClientEvent('police:client:policeAlert', v.PlayerData.source, coords, text)
         end
     end
