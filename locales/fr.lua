@@ -188,6 +188,14 @@ local Translations = {
         remove_object = 'Retire un objet..',
         impound = 'Met le véhicule en fourrière..',
     },
+    target = {
+        sign_in = 'Mise en Service ON/OFF',
+        open_personal_stash = 'Ouvrir l\'Armoire Personnelle',
+        open_trash = 'Ouvrir la Benne à Ordure',
+        open_fingerprint = 'Accéder au Lecteur d\'Empreinte Digitale',
+        open_armory = 'Accéder à l\'Armurerie',
+        open_evidence_stash = 'Ouvrir le Coffre de Preuves',
+    }
 }
 
 if GetConvar('qb_locale', 'en') == 'fr' then
