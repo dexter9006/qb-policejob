@@ -469,7 +469,7 @@ RegisterNetEvent('qb-police:client:openArmoury', function()
         end
     end
     local authorizedItems = {
-        label = 'Police Armory',
+        label = 'Armurerie de Police',
         slots = #authorizedItemsList,
         items = authorizedItemsList
     }
